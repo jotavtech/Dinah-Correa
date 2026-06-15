@@ -8,7 +8,7 @@ export function UsefulLinksSection() {
   return (
     <Section
       aria-label="Links úteis"
-      className="border-t border-border bg-surface-muted/40"
+      className="border-t border-border bg-taupe"
     >
       <SectionHeading
         eyebrow="Links úteis"

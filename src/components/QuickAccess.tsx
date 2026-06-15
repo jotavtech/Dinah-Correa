@@ -58,7 +58,7 @@ export function QuickAccess() {
   return (
     <section
       aria-label="Acesso rápido"
-      className="border-b border-border bg-surface-muted/50 px-5 py-12 sm:px-8 sm:py-14"
+      className="border-b border-border bg-taupe px-5 py-12 sm:px-8 sm:py-14"
     >
       <div className="mx-auto grid w-full max-w-[1200px] gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((item, i) => {

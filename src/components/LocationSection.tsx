@@ -8,7 +8,7 @@ export function LocationSection() {
   return (
     <Section
       id="localizacao"
-      className="border-y border-border bg-surface-muted/40"
+      className="border-y border-border bg-taupe"
     >
       <SectionHeading
         eyebrow="Localização"
