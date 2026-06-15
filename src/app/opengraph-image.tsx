@@ -1,9 +1,16 @@
 import { ImageResponse } from "next/og";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { siteConfig } from "@/data/site";
 
 export const alt = `${siteConfig.name} — ${siteConfig.city}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+
+const logoData = readFileSync(
+  join(process.cwd(), "public", "logo-dc.png"),
+).toString("base64");
+const logoSrc = `data:image/png;base64,${logoData}`;
 
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -22,7 +29,13 @@ export default function OpengraphImage() {
           border: "16px solid #1b1f24",
         }}
       >
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
           <div
             style={{
               display: "flex",
@@ -36,6 +49,8 @@ export default function OpengraphImage() {
           >
             {`Cartório · ${siteConfig.city}`}
           </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={logoSrc} width={150} height={98} alt="" />
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>

@@ -1,9 +1,12 @@
+import Image from "next/image";
 import { cn } from "@/lib/cn";
 import { siteConfig } from "@/data/site";
+import logoMetal from "../../public/logo-dc.png";
+import logoLight from "../../public/logo-dc-light.png";
 
 /**
- * Marca do cartório: selo com monograma "DC" + nome.
- * `tone` ajusta as cores para fundos claros ou escuros.
+ * Marca do cartório: logo "DC" + nome.
+ * `tone` troca o logo (metálico p/ fundo claro, silhueta clara p/ fundo escuro).
  */
 export function Brand({
   tone = "light",
@@ -15,23 +18,13 @@ export function Brand({
   const isDark = tone === "dark";
   return (
     <span className={cn("flex items-center gap-3", className)}>
-      <span
+      <Image
+        src={isDark ? logoLight : logoMetal}
+        alt=""
         aria-hidden="true"
-        className={cn(
-          "relative flex size-10 shrink-0 items-center justify-center rounded-full border",
-          isDark ? "border-gold/50" : "border-gold/60",
-        )}
-      >
-        <span
-          className={cn(
-            "absolute inset-[3px] rounded-full border",
-            isDark ? "border-gold/25" : "border-border",
-          )}
-        />
-        <span className="font-serif text-sm font-semibold tracking-tight text-gold">
-          DC
-        </span>
-      </span>
+        priority
+        className="h-9 w-auto sm:h-10"
+      />
       <span className="flex flex-col leading-none">
         <span
           className={cn(
