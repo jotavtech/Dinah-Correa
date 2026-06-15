@@ -15,11 +15,11 @@ export default function OpengraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#f7f5ef",
+          background: "#f4f1e8",
           padding: "72px 80px",
           fontFamily: "Georgia, serif",
-          color: "#171717",
-          border: "16px solid #1f1f1f",
+          color: "#27333d",
+          border: "16px solid #1b1f24",
         }}
       >
         <div style={{ display: "flex", flexDirection: "column" }}>
@@ -29,7 +29,7 @@ export default function OpengraphImage() {
               fontSize: 26,
               letterSpacing: 8,
               textTransform: "uppercase",
-              color: "#b8904a",
+              color: "#b0945f",
               fontFamily: "sans-serif",
               fontWeight: 600,
             }}
@@ -46,7 +46,7 @@ export default function OpengraphImage() {
             style={{
               marginTop: 28,
               fontSize: 34,
-              color: "#2a2a2a",
+              color: "#424a51",
               maxWidth: 900,
               fontFamily: "sans-serif",
             }}
@@ -62,12 +62,12 @@ export default function OpengraphImage() {
             alignItems: "center",
             gap: 24,
             fontSize: 26,
-            color: "#74706a",
+            color: "#736d63",
             fontFamily: "sans-serif",
           }}
         >
           <div style={{ display: "flex" }}>{siteConfig.serviceModes}</div>
-          <div style={{ display: "flex", color: "#b8904a" }}>•</div>
+          <div style={{ display: "flex", color: "#b0945f" }}>•</div>
           <div style={{ display: "flex" }}>{siteConfig.hoursShort}</div>
         </div>
       </div>

@@ -6,10 +6,7 @@ import { services } from "@/data/site";
 
 export function ServicesSection() {
   return (
-    <Section
-      id="servicos"
-      className="border-y border-border bg-surface-muted/40"
-    >
+    <Section id="servicos" className="border-y border-border bg-taupe">
       <SectionHeading
         eyebrow="Serviços"
         title={

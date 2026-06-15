@@ -80,7 +80,7 @@ export function LocationSection() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Abrir localização no Google Maps"
-              className="group relative flex min-h-[240px] items-center justify-center overflow-hidden border-t border-border bg-[#eceae2] lg:border-l lg:border-t-0"
+              className="group relative flex min-h-[240px] items-center justify-center overflow-hidden border-t border-border bg-taupe lg:border-l lg:border-t-0"
             >
               {/* grade estilizada de "mapa" */}
               <div
@@ -88,13 +88,13 @@ export function LocationSection() {
                 className="absolute inset-0 opacity-[0.5]"
                 style={{
                   backgroundImage:
-                    "linear-gradient(#d9d4c8 1px, transparent 1px), linear-gradient(90deg, #d9d4c8 1px, transparent 1px)",
+                    "linear-gradient(#cdc6b6 1px, transparent 1px), linear-gradient(90deg, #cdc6b6 1px, transparent 1px)",
                   backgroundSize: "32px 32px",
                 }}
               />
               <div
                 aria-hidden="true"
-                className="absolute left-1/3 top-0 h-full w-10 -rotate-12 bg-[#e3e0d6]"
+                className="absolute left-1/3 top-0 h-full w-10 -rotate-12 bg-[#e2ddd1]"
               />
               <div className="relative flex flex-col items-center text-center">
                 <span className="flex size-14 items-center justify-center rounded-full bg-gold text-white shadow-lg transition-transform duration-300 group-hover:scale-110">

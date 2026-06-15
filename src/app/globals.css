@@ -5,23 +5,25 @@
 /* ------------------------------------------------------------------ */
 
 :root {
-  --background: #f7f5ef;
-  --surface: #ffffff;
-  --surface-muted: #efeee7;
-  --ink: #171717;
-  --ink-soft: #2a2a2a;
-  --muted: #74706a;
-  --gold: #b8904a;
-  --gold-soft: #d8c09a;
-  --border: #d9d4c8;
-  --dark: #1f1f1f;
-  --dark-soft: #292929;
+  --background: #f4f1e8; /* papel creme quente */
+  --surface: #faf8f1; /* cards, um tom acima do fundo */
+  --surface-muted: #e9e5d9; /* bloco neutro suave */
+  --taupe: #d9d5ca; /* seção taupe (ex.: serviços) */
+  --ink: #27333d; /* ardósia escura levemente azulada — títulos */
+  --ink-soft: #424a51; /* corpo forte */
+  --muted: #736d63; /* cinza quente — texto secundário */
+  --gold: #b0945f; /* dourado/tan suave (accent) */
+  --gold-soft: #d8c6a2;
+  --border: #d8d1c2;
+  --dark: #1b1f24; /* ardósia muito escura — footer/botões */
+  --dark-soft: #262b31;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-surface: var(--surface);
   --color-surface-muted: var(--surface-muted);
+  --color-taupe: var(--taupe);
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
   --color-muted: var(--muted);
